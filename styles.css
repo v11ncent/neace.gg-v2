@@ -28,7 +28,7 @@ h2
 {
     color: var(--color-header);
     font-family: var(--ff-header);
-    font-size: clamp(1.6rem, 2.2vw, 3rem);
+    font-size: clamp(1.5rem, 2.2vw, 3rem);
     font-weight: 500;
     text-align: center;
     padding-bottom: 1rem;
@@ -57,7 +57,7 @@ p
     line-height: 1.6;
     font-size: clamp(0.9rem, 1.05vw, 1.5rem);
     padding: 0.2rem 0;
-    text-align: left;
+    
 }
 
 img 
@@ -531,11 +531,6 @@ section#home p
     background-position: center;
 }
 
-.glide .container--content p
-{
-    text-align: center;
-}
-
 body
 {
     max-height: 100vh;
@@ -758,11 +753,6 @@ section#home .button.small
 .glide__slide > div > .container--content > p
 {
     text-align: left;
-}
-
-.glide#glide--team .container--content > p
-{
-    text-align: center;
 }
 
 section#reviews .container--content
