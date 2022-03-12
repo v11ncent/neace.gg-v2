@@ -1,0 +1,812 @@
+:root {
+    --ff-header: 'Oswald', sans-serif;
+    --ff-text: 'Roboto', serif;
+    --color-main: #0E0F12;
+    --color-neace: #F67647;
+    --color-header: rgba(255, 255, 255, 0.87);
+    --color-content: rgba(255, 255, 255, 0.67);
+    --color-accent: #09090c;
+}
+
+*,
+*::before,
+*::after 
+{
+    box-sizing: border-box;
+}
+
+h1 
+{
+    color: var(--color-header);
+    font-family: var(--ff-header);
+    font-size: clamp(2.5rem, 6vw, 7rem);
+    font-weight: 700;
+    text-align: center;
+}
+
+h2 
+{
+    color: var(--color-header);
+    font-family: var(--ff-header);
+    font-size: clamp(1.6rem, 2.2vw, 3rem);
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+h3 
+{
+    color: var(--color-header);
+    font-family: var(--ff-text);
+    font-size: clamp(0.8rem, 1.2vw, 1.7rem);
+    font-weight: 700;
+    text-align: center;
+}
+
+h4 
+{
+    color: var(--color-neace);
+    font-family: var(--ff-text);
+    font-weight: 500;
+}
+
+p 
+{
+    font-weight: 400;
+    max-width: 55ch;
+    line-height: 1.6;
+    font-size: clamp(0.9rem, 1.05vw, 1.5rem);
+    padding: 0.2rem 0;
+    text-align: left;
+}
+
+img 
+{
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+strong
+{
+    color: var(--color-neace);
+}
+
+a 
+{
+    text-decoration: none;
+    color: var(--color-header);
+}
+
+body 
+{   
+    background-color: var(--color-main);
+}
+
+main
+{
+    color: var(--color-content);
+    font-family: var(--ff-text);
+    display: flex;
+    width: 100%;
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: scroll;
+}
+
+section 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container--content 
+{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.container--button 
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.button 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .2rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.button.large 
+{
+    font-size: clamp(0.8rem, 0.95vw, 1rem);
+    font-weight: 500;
+    background: var(--color-neace);
+    box-shadow: 0 0 1rem rgba(246, 118, 71, .57);
+    width: 100%;
+}
+
+.button.secondary
+{
+    font-size: clamp(0.8rem, 1vw, 1rem);
+    font-weight: 500;
+    border-radius: 2rem;
+    padding: 0.75em 1.5em;
+    border: .18rem solid var(--color-neace);
+    background-color: transparent;
+    color: var(--color-neace);
+}
+
+
+::selection 
+{
+    color: var(--color-neace);
+}
+
+video
+{
+    display: block;
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+}
+
+section#home::after
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-image: url('images/desktop/dot-background.jpg'); */
+    opacity: .4;
+}
+
+section#book
+{
+    background-image: url('images/desktop/about-section-image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section#home
+{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-accent);
+}
+
+section#home h2
+{
+    font-size: clamp(1rem, 2.2vw, 3rem);
+    font-weight: 500;
+    line-height: 1.5;
+    padding: 0;
+}
+
+section#home .button.small
+{
+    display: none;
+}
+
+section#home .container--content
+{
+    line-height: 1;
+    z-index: 10;
+}
+
+nav
+{
+    display: none;
+}
+
+section#about .container--button
+{
+    align-self: left;
+}
+
+.container--stats 
+{
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    word-break: break-word;
+    padding: 2rem 0;
+}
+
+.container--stats > * 
+{
+    text-align: center;
+    width: 33.333333333%;
+}
+
+.container--stats > * > * 
+{
+    padding: 0;
+}
+
+.stats--border 
+{
+    border-left: 0.1rem solid #1f1f1f;
+    border-right: 0.1rem solid #1f1f1f;
+    padding: 0 0.7rem;
+}
+
+section#about .container--image > img 
+{
+   width: 70vw;
+}
+
+/* Team Section */
+.container--cards 
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 0 1rem 1rem 1rem;
+}
+
+.container--cards > .card 
+{
+    flex: 0 0 auto;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    margin: auto;
+}
+
+.container--cards > .card img 
+{
+    border-radius: 0.3rem;
+}
+
+.card > .container--content h3 
+{
+    font-size: clamp(1.3rem, 1.8vw, 1.9rem);
+    text-align: left;
+}
+
+section#team .card:hover 
+{
+    opacity: 0.7;
+}
+
+section#team .container--image > img 
+{
+    width: 12rem;
+}
+
+
+section#team .container--content 
+{
+    padding: 0.3rem 0 0 0;
+    max-width: 20ch;
+}
+
+section#team p
+{
+    padding: 0;
+}
+
+/* Testimonials Section */
+section#testimonials .container--image > .container--content 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 1rem;
+}
+
+section#testimonials .container--image > .container--content > p 
+{
+    color: white;
+}
+
+.display 
+{
+    display: block;
+}
+
+.hide 
+{
+    display: none;
+}
+
+section#testimonials .container--content 
+{
+    padding: 0.3rem 0 0 0;
+    max-width: 50ch;
+}
+
+section#testimonials .card p 
+{
+    max-width: 30ch;
+    color: var(--color-content);
+}
+
+section#testimonials .container--image 
+{
+    position: relative;
+}
+
+section#testimonials .container--image > img 
+{
+    width: 18rem;
+}
+
+/* Reviews Section*/
+section#reviews
+{
+    max-width: 100%;
+}
+
+section#reviews h3 
+{
+    color: var(--color-content);
+    font-weight: 400;
+    padding-top: 0.3rem;
+}
+
+section#reviews .card 
+{
+    border: 1px dashed rgb(58, 58, 58);
+}
+
+section#reviews p 
+{
+    max-width: 23ch;
+    color: var(--color-content);
+}
+
+/* Footer */
+footer 
+{
+    background-color: var(--color-accent);
+    border-top: .1rem solid rgb(58, 58, 58);
+    padding: 1.5rem 1.5rem;
+}
+
+footer .container--image 
+{
+    display: flex;
+    align-items: center;
+}
+
+footer img 
+{
+    width: 2.5rem;
+    margin-left: -0.35rem;
+    padding-bottom: 0.8rem;
+}
+
+footer ul 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: var(--color-content);
+    padding: 0;
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+footer h4 
+{
+    font-size: 0.9rem;
+    padding: 0;
+    color: var(--color-header);
+    font-weight: 400;
+    text-align: left;
+}
+
+nav i:hover
+{
+    color: var(--color-neace);
+} 
+
+button
+{
+    border: none;
+    background: none;
+    color: white;
+}
+
+section#about p
+{
+    text-align: left;
+}
+
+section#home p
+{
+    text-align: left;
+}
+
+.desktop
+{
+    display: block;
+}
+.mobile
+{
+    display: none;
+}
+
+.glide .container--content
+{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    min-width: 100%;
+    min-height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.glide__slide > div
+{
+    position: relative;
+    height: 100%;
+}
+
+#coach--5fire
+{
+    background-image: url(images/desktop/yone.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#coach--1
+{
+    background-image: url(images/desktop/thresh.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#coach--2
+{
+    background-image: url(images/desktop/riven.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#coach--3
+{
+    background-image: url(images/desktop/hecarim.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.glide h2
+{
+    line-height: 1.2;
+}
+
+#testimonials--ninja
+{
+    background-image: url(images/desktop/ninja.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#testimonials--ellis
+{
+    background-image: url(images/desktop/ellis.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#testimonials--robert
+{
+    background-image: url(images/desktop/robert.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.glide .container--content p
+{
+    text-align: center;
+}
+
+body
+{
+    max-height: 100vh;
+}
+
+.container--scrollable,
+section,
+.glide,
+.glide__track,
+.glide__slides,
+.glide__slide
+{
+    max-height: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.glide__bullet
+{
+    background-color: var(--color-neace);
+}
+
+img
+{
+    width: 100%;
+    object-fit: cover;
+}
+
+.container--button.secondary
+{
+    margin-top: 1rem;
+}
+
+.container--content
+{
+    padding: 2rem;
+}
+
+.container--content
+section#about .container--content,
+section#team .container--content,
+section#testimonials .container--content,
+section#reviews .container--content
+{
+    padding: 1.25rem;
+}
+
+section#about h2
+{
+    text-align: left;
+    font-size: clamp(1.3rem, 2.5vw, 3rem);
+}
+
+p
+{
+    text-align: left;
+}
+
+html,
+body
+{
+    height: 100%;
+    min-height: 568px;
+}
+
+section 
+{
+    min-width: 100%;
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+nav
+{
+    position: fixed;
+    display: block;
+    min-height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 3.5rem;
+}
+
+.nav-divider
+{
+    border: 0.1rem solid grey;
+    width: 100%;
+}
+
+nav div#desktop-nav
+{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+nav div#desktop-nav ul
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: calc(3rem + 3vh);
+}
+
+nav div#desktop-nav ul div:first-child
+{
+    background-color: var(--color-neace);
+    border: 1px solid white;
+}
+
+i
+{
+    color: var(--color-header);
+    font-size: 1.3rem;
+}
+
+video 
+{
+    display: block;
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+}
+
+section#home .container--content,
+section#home .container--button
+{
+    z-index: 1;
+}
+
+nav
+{
+    display: none;
+}
+
+
+.container--cards 
+{
+    justify-content: center;
+    gap: 1.5vw;
+}
+
+footer
+{
+    display: none;
+}
+
+.button.large 
+{
+    width: 20rem;
+    background-color: transparent;
+    box-shadow: none;
+    border: 0.2rem solid var(--color-neace);
+    padding: 0.9em;
+}
+
+
+.container--image
+{
+    position: absolute;
+    z-index: -1;
+    min-height: 100%;
+    min-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+section#about
+{
+    background-image: url('images/desktop/about-section-image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section#about .container--button
+{
+    justify-content: flex-start;
+}
+
+section#home h1 
+{
+    color: white;
+}
+
+section#home h2 
+{
+    font-weight: 400;
+}
+
+section#home h3 
+{
+    display: none;
+}
+
+section#home .container--content 
+{
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+section#home span {
+    width: 65%;
+}
+
+section#home .button.small 
+{
+    display: flex;
+    justify-content: center;
+}
+
+.glide__slide > div > .container--content > p
+{
+    text-align: left;
+}
+
+.glide#glide--team .container--content > p
+{
+    text-align: center;
+}
+
+section#reviews .container--content
+{
+    align-items: flex-start;
+}
+
+a:hover
+{
+    background-color: var(--color-neace);
+}
+
+section#about .container--content
+{
+    justify-content: center;
+}
+
+@media (max-width: 400px)
+{
+    section#about .container--content
+    {
+        background-color: rgba(0, 0, 0, 0.8);
+        min-width: 100%;
+        min-height: 100%;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        position: relative;
+    }
+
+    section#about
+    {
+        
+        background-image: url('images/SummonersRift.jpg');
+    }
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+p
+{
+    margin: 0;
+}
