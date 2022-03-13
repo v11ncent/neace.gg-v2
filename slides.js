@@ -48,5 +48,5 @@ let glideTestimonials = new Glide('.glide#glide--testimonials', testimonialOptio
 let glideReviews = new Glide('.glide#glide--reviews', reviewOptions);
 
 glideTeam.mount({ Controls, Swipe, Breakpoints });
-glideTestimonials.mount({ Breakpoints });
+glideTestimonials.mount({ Breakpoints, Controls, Swipe });
 glideReviews.mount({ Autoplay, Controls, Swipe, Breakpoints });
