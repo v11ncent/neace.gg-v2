@@ -57,7 +57,7 @@ p
     line-height: 1.6;
     font-size: clamp(0.9rem, 1.05vw, 1.5rem);
     padding: 0.2rem 0;
-    
+    text-align: center;
 }
 
 img 
@@ -93,6 +93,7 @@ main
     padding: 0;
     margin: 0;
     overflow-x: scroll;
+    background-color: #000;
 }
 
 section 
@@ -128,19 +129,6 @@ section
     border-radius: .2rem;
     padding: 1rem;
     cursor: pointer;
-}
-
-.button.large 
-{
-    font-size: clamp(0.8rem, 0.95vw, 1rem);
-    font-weight: 500;
-    background: var(--color-neace);
-    box-shadow: 0 0 1rem rgba(246, 118, 71, .57);
-    width: 100%;
-}
-
-.button.secondary
-{
     font-size: clamp(0.8rem, 1vw, 1rem);
     font-weight: 500;
     border-radius: 2rem;
@@ -148,6 +136,14 @@ section
     border: .18rem solid var(--color-neace);
     background-color: transparent;
     color: var(--color-neace);
+}
+
+section#home .button
+{
+    background-color: var(--color-neace);
+    color: white;
+    margin-top: 1em;
+    font-size: 1.3em;
 }
 
 ::selection 
@@ -163,6 +159,7 @@ video
     right: 0;
     bottom: 0;
     min-width: 100%;
+    filter: brightness(50%);
 }
 
 section#home::after
@@ -219,7 +216,7 @@ nav
 
 section#about .container--button
 {
-    align-self: left;
+    align-self: center;
 }
 
 .container--stats 
@@ -369,14 +366,9 @@ section#reviews h3
     padding-top: 0.3rem;
 }
 
-section#reviews .card 
-{
-    border: 1px dashed rgb(58, 58, 58);
-}
-
 section#reviews p 
 {
-    max-width: 23ch;
+    max-width: 35ch;
     color: var(--color-content);
 }
 
@@ -432,16 +424,6 @@ button
     border: none;
     background: none;
     color: white;
-}
-
-section#about p
-{
-    text-align: left;
-}
-
-section#home p
-{
-    text-align: left;
 }
 
 .desktop
@@ -580,13 +562,7 @@ section#reviews .container--content
 
 section#about h2
 {
-    text-align: left;
     font-size: clamp(1.3rem, 2.5vw, 3rem);
-}
-
-p
-{
-    text-align: left;
 }
 
 html,
@@ -749,14 +725,30 @@ section#home .button.small
     justify-content: center;
 }
 
-.glide__slide > div > .container--content > p
+section#reviews .container--content
+{
+    align-items: flex-start;
+}
+
+section#reviews p
 {
     text-align: left;
 }
 
-section#reviews .container--content
+@media (max-width: 450px)
 {
-    align-items: flex-start;
+    section#reviews p 
+    {
+        text-align: center;
+    }
+
+    section#reviews .container--content
+    {
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
 }
 
 a:hover

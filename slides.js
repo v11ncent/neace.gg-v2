@@ -1,4 +1,4 @@
-import Glide, { Autoplay, Anchors, Controls, Swipe, Breakpoints } from 'https://unpkg.com/@glidejs/glide/dist/glide.modular.esm';
+import Glide, { Autoplay, Controls, Swipe, Breakpoints } from 'https://unpkg.com/@glidejs/glide/dist/glide.modular.esm';
 
 const teamOptions = 
 {
@@ -14,8 +14,6 @@ const teamOptions =
 const testimonialOptions =
 {
     type: 'carousel',
-    autoplay: 4000,
-    hoverpause: false,
     perView: 3,
     breakpoints: {
         1000: {
@@ -26,11 +24,12 @@ const testimonialOptions =
 
 const reviewOptions = {
     type: 'carousel',
-    autoplay: 3000,
+    autoplay: 5000,
     hoverpause: false,
     perView: 5,
     breakpoints: {
-        500: {
+        450: 
+        {
             perView: 1
         },
         600: {
