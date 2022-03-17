@@ -42,7 +42,6 @@ const reviewOptions = {
     }
 }
 
-
 let glideTeam = new Glide('.glide#glide--team', teamOptions);
 let glideTestimonials = new Glide('.glide#glide--testimonials', testimonialOptions);
 let glideReviews = new Glide('.glide#glide--reviews', reviewOptions);

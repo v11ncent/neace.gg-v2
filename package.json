@@ -1,0 +1,22 @@
+{
+  "name": "neace.gg-new-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "devDependencies": {
+    "@glidejs/glide": "^3.5.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vince1444/neace.gg-v2.git"
+  },
+  "author": "vince1444 <vince1444dev@gmail.com> (https://github.com/vince1444)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vince1444/neace.gg-v2/issues"
+  },
+  "homepage": "https://github.com/vince1444/neace.gg-v2#readme"
+}
