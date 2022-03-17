@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/vince1444/neace.gg-v2/issues"
   },
-  "homepage": "https://github.com/vince1444/neace.gg-v2#readme"
+  "homepage": "https://github.com/vince1444/neace.gg-v2#readme",
+  "dependencies": {
+    "@glidejs/glide": "^3.5.2"
+  }
 }
