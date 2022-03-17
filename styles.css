@@ -219,6 +219,11 @@ section#about .container--button
     align-self: center;
 }
 
+section#reviews
+{
+    background-color: var(--color-accent);
+}
+
 .container--stats 
 {
     max-width: 100%;
@@ -443,6 +448,11 @@ button
     min-height: 100%;
     align-items: center;
     justify-content: center;
+}
+
+section#reviews .glide .container--content
+{
+    background-color: #000;
 }
 
 .glide__slide > div
