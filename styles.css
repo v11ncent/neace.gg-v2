@@ -150,7 +150,6 @@ section
     color: var(--color-neace);
 }
 
-
 ::selection 
 {
     color: var(--color-neace);
@@ -180,7 +179,7 @@ section#home::after
 
 section#book
 {
-    background-image: url('images/desktop/about-section-image.png');
+    background-image: url('images/desktop/book-section-image.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -707,7 +706,7 @@ footer
 
 section#about
 {
-    background-image: url('images/desktop/about-section-image.png');
+    background-image: url('images/desktop/Untitled-1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
