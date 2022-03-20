@@ -19,7 +19,7 @@ h1
 {
     color: var(--color-header);
     font-family: var(--ff-header);
-    font-size: clamp(2.5rem, 6vw, 7rem);
+    font-size: clamp(3rem, 6vw, 7rem);
     font-weight: 700;
     text-align: center;
 }
@@ -89,7 +89,7 @@ main
     font-family: var(--ff-text);
     display: flex;
     width: 100%;
-    min-height: 100%;
+    height: 100%;
     padding: 0;
     margin: 0;
     overflow-x: scroll;
@@ -118,7 +118,12 @@ section
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    margin-top: 1rem;
+    margin-top: 1.5em;
+}
+
+section#home .container--button
+{
+    margin: 0;
 }
 
 .button 
@@ -134,16 +139,20 @@ section
     border-radius: 2rem;
     padding: 0.75em 1.5em;
     border: .18rem solid var(--color-neace);
-    background-color: transparent;
+    background-color: rgba(246, 118, 71, 0.2);
     color: var(--color-neace);
 }
 
 section#home .button
 {
-    background-color: var(--color-neace);
     color: white;
+    border-radius: 0.25em;
+    width: 17em;
     margin-top: 1em;
-    font-size: 1.3em;
+    font-family: var(--ff-header);
+    color: var(--color-neace);
+    letter-spacing: 0.1em;
+    background-color: rgba(246, 118, 71, 0.2);
 }
 
 ::selection 
@@ -192,21 +201,10 @@ section#home
 
 section#home h2
 {
-    font-size: clamp(1rem, 2.2vw, 3rem);
+    font-size: clamp(1.5rem, 2.2vw, 3rem);
     font-weight: 500;
     line-height: 1.5;
     padding: 0;
-}
-
-section#home .button.small
-{
-    display: none;
-}
-
-section#home .container--content
-{
-    line-height: 1;
-    z-index: 10;
 }
 
 nav
@@ -424,6 +422,54 @@ nav i:hover
     color: var(--color-neace);
 } 
 
+section
+{
+    height: 100%;
+    width: 100%;
+}
+
+.swiper-pagination
+{
+    bottom: 2rem;
+}
+
+.swiper-pagination-bullet
+{
+    background-color: #fff !important;
+}
+
+.swiper-pagination-bullet-active
+{
+    background-color: var(--color-neace) !important;
+}
+
+.teamSwiper,
+.testimonialSwiper,
+.reviewSwiper
+{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.teamSwiper .container--content,
+.testimonialSwiper .container--content,
+.reviewSwiper .container--content
+{
+    min-height: 100%;
+    min-width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.teamSlider h2,
+.testimonialSlider h2,
+.reviewSlider h2
+{
+    line-height: 1.2;
+}
+
 button
 {
     border: none;
@@ -431,37 +477,12 @@ button
     color: white;
 }
 
-.desktop
-{
-    display: block;
-}
-.mobile
-{
-    display: none;
-}
-
-.glide .container--content
-{
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.8);
-    min-width: 100%;
-    min-height: 100%;
-    align-items: center;
-    justify-content: center;
-}
-
-section#reviews .glide .container--content
+section#reviews .container--content
 {
     background-color: #000;
 }
 
-.glide__slide > div
-{
-    position: relative;
-    height: 100%;
-}
-
-#coach--5fire
+.coach--5fire
 {
     background-image: url(images/desktop/yone.jpg);
     background-repeat: no-repeat;
@@ -469,7 +490,7 @@ section#reviews .glide .container--content
     background-position: center;
 }
 
-#coach--1
+.coach--1
 {
     background-image: url(images/desktop/thresh.jpg);
     background-repeat: no-repeat;
@@ -477,7 +498,7 @@ section#reviews .glide .container--content
     background-position: center;
 }
 
-#coach--2
+.coach--2
 {
     background-image: url(images/desktop/riven.jpg);
     background-repeat: no-repeat;
@@ -485,17 +506,12 @@ section#reviews .glide .container--content
     background-position: center;
 }
 
-#coach--3
+.coach--3
 {
     background-image: url(images/desktop/hecarim.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
-
-.glide h2
-{
-    line-height: 1.2;
 }
 
 #testimonials--ninja
@@ -522,38 +538,10 @@ section#reviews .glide .container--content
     background-position: center;
 }
 
-body
-{
-    max-height: 100vh;
-}
-
-.container--scrollable,
-section,
-.glide,
-.glide__track,
-.glide__slides,
-.glide__slide
-{
-    max-height: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.glide__bullet
-{
-    background-color: var(--color-neace);
-}
-
 img
 {
     width: 100%;
     object-fit: cover;
-}
-
-.container--button.secondary
-{
-    margin-top: 1rem;
 }
 
 .container--content
@@ -578,8 +566,10 @@ section#about h2
 html,
 body
 {
-    height: 100%;
-    min-height: 568px;
+    max-height: 100vh;
+    height: 100vh;
+    min-height: 600px;
+    width: 100%;
 }
 
 section 
@@ -761,17 +751,12 @@ section#reviews p
     }
 }
 
-a:hover
-{
-    background-color: var(--color-neace);
-}
-
 section#about .container--content
 {
     justify-content: center;
 }
 
-@media (max-width: 400px)
+@media (max-width: 1000px)
 {
     section#about .container--content
     {
@@ -782,6 +767,7 @@ section#about .container--content
         right: 0;
         z-index: 1;
         position: relative;
+        align-items: center;
     }
 
     section#about

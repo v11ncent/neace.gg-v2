@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css" integrity="sha512-YQlbvfX5C6Ym6fTUSZ9GZpyB3F92hmQAZTO5YjciedwAaGRI9ccNs4iw2QTCJiSPheUQZomZKHQtuwbHkA9lgw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css" integrity="sha512-wCwx+DYp8LDIaTem/rpXubV/C1WiNRsEVqoztV0NZm8tiTvsUeSlA/Uz02VTGSiqfzAHD4RnqVoevMcRZgYEcQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <script src="https://kit.fontawesome.com/5f0726adb4.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/@glidejs/glide"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="slides.js" type="module"></script>
     <script src="main.js"></script> 
     <title>NEACE | #1 COACHING SERVICE</title>
@@ -38,244 +38,194 @@
                 <h2>Learn League of Legends From</h2>
                 <h1>KING OF MACRO</h1>
             </div>
-            <button class="container--button">
+            <button class="container--button"> <!--CHANGE THIS-->
                 <div class="button secondary">GAIN ELO NOW</div>
             </button>
         </section>
         <section id="about">
             <div class="container--content">
                 <h2>LEARN FROM NEACE</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, rem labore magnam adipisci, odit laborum accusantium vel at quae repellendus dolorum ea, libero impedit alias sapiente neque ullam fugitarchitecto. Recusandae, rem labore magnam adipisci, odit laborum accusantium vel at quae repellendus dolorum ea, libero impedit alias sapiente neque ullam fugitarchitecto.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, rem labore magnam adipisci, odit laborum accusantium vel at quae repellendus dolorum ea, libero impedit alias sapiente neque ullam fugitarchitecto. Recusandae, rem labore magnam adipisci, odit laborum accusantium vel at quae repellendus dolorum ea, libero impedit alias sapiente neque ullam fugitarchitecto.</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, rem labore magnam adipisci, odit laborum accusantium vel at quae repellendus dolorum ea, libero impedit alias sapiente neque ullam fugitarchitecto. Recusandae, rem labore magnam adipisci, odit laborum accusantium vel at quae repellendus dolorum ea, libero impedit alias sapiente neque ullam fugitarchitecto.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, rem labore magnam adipisci, odit laborum accusantium vel at quae repellendus dolorum ea, libero impedit alias sapiente neque ullam fugitarchitecto. Recusandae, rem labore magnam adipisci, odit laborum accusantium vel at quae repellendus dolorum ea, libero impedit alias sapiente neque ullam fugitarchitecto.
+                </p>
                 <div class="container--button">
                     <a href="#about" class="button">BOOK THE KING OF MACRO</a>
                 </div>
             </div>
         </section>
         <section id="team">
-            <div class="glide" id="glide--team">
-                <div class="glide__track" data-glide-el="track">
-                    <ul class="glide__slides">
-                    <li class="glide__slide" id="coach--5fire">
-                        <div>
-                            <div class="container--content">
-                                <h4>COACH</h4>
-                                <h2>YONE</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptatem? Nisi voluptatum accusamus eveniet dolorum repudiandae ad hic. Nobis, debitis consequatur. Sequi necessitatibus odio explicabo voluptate natus, quasi, unde hic obcaecati iste modi, sapiente blanditiis doloremque ad consectetur eos quisquam voluptates totam rem dicta repudiandae sunt fugiat eligendi reiciendis! Itaque.</p>
-                                <div class="container--button">
-                                    <a href="#about" class="button">BOOK YONE</a>
-                                </div>
+            <!-- Slider main container -->
+            <div class="teamSwiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide coach--5fire">
+                        <div class="container--content">
+                            <h4>COACH</h4>
+                            <h2>YONE</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptatem? Nisi voluptatum accusamus eveniet dolorum repudiandae ad hic. Nobis, debitis consequatur. Sequi necessitatibus odio explicabo voluptate natus, quasi, unde hic obcaecati iste modi, sapiente blanditiis doloremque ad consectetur eos quisquam voluptates totam rem dicta repudiandae sunt fugiat eligendi reiciendis! Itaque.</p>
+                            <div class="container--button">
+                                <a href="#about" class="button">BOOK YONE</a>
                             </div>
                         </div>
-                    </li>
-                    <li class="glide__slide" id="coach--1">
-                        <div>
-                            <div class="container--content">
-                                <h4>COACH</h4>
-                                <h2>THRESH</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptatem? Nisi voluptatum accusamus eveniet dolorum repudiandae ad hic. Nobis, debitis consequatur. Sequi necessitatibus odio explicabo voluptate natus, quasi, unde hic obcaecati iste modi, sapiente blanditiis doloremque ad consectetur eos quisquam voluptates totam rem dicta repudiandae sunt fugiat eligendi reiciendis! Itaque.</p>
-                                <div class="container--button">
-                                    <a href="#about" class="button">BOOK THRESH</a>
-                                </div>
+                    </div>
+                    <div class="swiper-slide coach--1">
+                        <div class="container--content">
+                            <h4>COACH</h4>
+                            <h2>THRESH</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptatem? Nisi voluptatum accusamus eveniet dolorum repudiandae ad hic. Nobis, debitis consequatur. Sequi necessitatibus odio explicabo voluptate natus, quasi, unde hic obcaecati iste modi, sapiente blanditiis doloremque ad consectetur eos quisquam voluptates totam rem dicta repudiandae sunt fugiat eligendi reiciendis! Itaque.</p>
+                            <div class="container--button">
+                                <a href="#about" class="button">BOOK THRESH</a>
                             </div>
                         </div>
-                    </li>
-                    <li class="glide__slide" id="coach--2">
-                        <div>
-                            <div class="container--content">
-                                <h4>COACH</h4>
-                                <h2>RIVEN</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptatem? Nisi voluptatum accusamus eveniet dolorum repudiandae ad hic. Nobis, debitis consequatur. Sequi necessitatibus odio explicabo voluptate natus, quasi, unde hic obcaecati iste modi, sapiente blanditiis doloremque ad consectetur eos quisquam voluptates totam rem dicta repudiandae sunt fugiat eligendi reiciendis! Itaque.</p>
-                                <div class="container--button">
-                                    <a href="#about" class="button">BOOK RIVEN</a>
-                                </div>
+                    </div>
+                    <div class="swiper-slide coach--2">
+                        <div class="container--content">
+                            <h4>COACH</h4>
+                            <h2>RIVEN</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptatem? Nisi voluptatum accusamus eveniet dolorum repudiandae ad hic. Nobis, debitis consequatur. Sequi necessitatibus odio explicabo voluptate natus, quasi, unde hic obcaecati iste modi, sapiente blanditiis doloremque ad consectetur eos quisquam voluptates totam rem dicta repudiandae sunt fugiat eligendi reiciendis! Itaque.</p>
+                            <div class="container--button">
+                                <a href="#about" class="button">BOOK RIVEN</a>
                             </div>
                         </div>
-                    </li>
-                    <li class="glide__slide" id="coach--3">
-                        <div>
-                            <div class="container--content">
-                                <h4>COACH</h4>
-                                <h2>HECARIM</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptatem? Nisi voluptatum accusamus eveniet dolorum repudiandae ad hic. Nobis, debitis consequatur. Sequi necessitatibus odio explicabo voluptate natus, quasi, unde hic obcaecati iste modi, sapiente blanditiis doloremque ad consectetur eos quisquam voluptates totam rem dicta repudiandae sunt fugiat eligendi reiciendis! Itaque.</p>
-                                <div class="container--button">
-                                    <a href="#about" class="button">BOOK HECARIM</a>
-                                </div>
+                    </div>
+                    <div class="swiper-slide coach--3">
+                        <div class="container--content">
+                            <h4>COACH</h4>
+                            <h2>HECARIM</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptatem? Nisi voluptatum accusamus eveniet dolorum repudiandae ad hic. Nobis, debitis consequatur. Sequi necessitatibus odio explicabo voluptate natus, quasi, unde hic obcaecati iste modi, sapiente blanditiis doloremque ad consectetur eos quisquam voluptates totam rem dicta repudiandae sunt fugiat eligendi reiciendis! Itaque.</p>
+                            <div class="container--button">
+                                <a href="#about" class="button">BOOK HECARIM</a>
                             </div>
                         </div>
-                    </li>
-                    </ul>
+                    </div>
                 </div>
-                <div class="glide__bullets" data-glide-el="controls[nav]">
-                    <button class="glide__bullet" data-glide-dir="=0"></button>
-                    <button class="glide__bullet" data-glide-dir="=1"></button>
-                    <button class="glide__bullet" data-glide-dir="=2"></button>
-                    <button class="glide__bullet" data-glide-dir="=3"></button>
-                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination--team"></div>
             </div>
         </section>
         <section id="testimonials">
-            <div class="glide" id="glide--testimonials">
-                <div class="glide__track" data-glide-el="track">
-                    <ul class="glide__slides">
-                    <li class="glide__slide" id="testimonials--ninja">
-                        <div>
-                            <div class="container--content">
-                                <h4>CELEBRITY</h4>
-                                <h2>TYLER "NINJA" BLEVINS</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptatem? Nisi voluptatum accusamus eveniet dolorum repudiandae ad hic. Nobis, debitis consequatur. Sequi necessitatibus odio explicabo voluptate natus, quasi, unde hic obcaecati iste modi, sapiente blanditiis doloremque ad consectetur eos quisquam voluptates totam rem dicta repudiandae sunt fugiat eligendi reiciendis! Itaque.</p>
-                            </div>
+            <!-- Slider main container -->
+            <div class="testimonialSwiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide" id="testimonials--ninja">
+                        <div class="container--content">
+                            <h4>CELEBRITY</h4>
+                            <h2>TYLER "NINJA" BLEVINS</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptatem? Nisi voluptatum accusamus eveniet dolorum repudiandae ad hic. Nobis, debitis consequatur. Sequi necessitatibus odio explicabo voluptate natus, quasi, unde hic obcaecati iste modi, sapiente blanditiis doloremque ad consectetur eos quisquam voluptates totam rem dicta repudiandae sunt fugiat eligendi reiciendis! Itaque.</p>
                         </div>
-                    </li>
-                    <li class="glide__slide" id="testimonials--ellis">
-                        <div>
-                            <div class="container--content">
-                                <h4>CELEBRITY</h4>
-                                <h2>ELLIS GENGE</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptatem? Nisi voluptatum accusamus eveniet dolorum repudiandae ad hic. Nobis, debitis consequatur. Sequi necessitatibus odio explicabo voluptate natus, quasi, unde hic obcaecati iste modi, sapiente blanditiis doloremque ad consectetur eos quisquam voluptates totam rem dicta repudiandae sunt fugiat eligendi reiciendis! Itaque.</p>
-                            </div>
+                    </div>
+                    <div class="swiper-slide" id="testimonials--ellis">
+                        <div class="container--content">
+                            <h4>CELEBRITY</h4>
+                            <h2>ELLIS GENGE</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptatem? Nisi voluptatum accusamus eveniet dolorum repudiandae ad hic. Nobis, debitis consequatur. Sequi necessitatibus odio explicabo voluptate natus, quasi, unde hic obcaecati iste modi, sapiente blanditiis doloremque ad consectetur eos quisquam voluptates totam rem dicta repudiandae sunt fugiat eligendi reiciendis! Itaque.</p>
                         </div>
-                    </li>
-                    <li class="glide__slide" id="testimonials--robert">
-                        <div>
-                            <div class="container--content">
-                                <h4>CELEBRITY</h4>
-                                <h2>ROBERT HOHMAN</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptatem? Nisi voluptatum accusamus eveniet dolorum repudiandae ad hic. Nobis, debitis consequatur. Sequi necessitatibus odio explicabo voluptate natus, quasi, unde hic obcaecati iste modi, sapiente blanditiis doloremque ad consectetur eos quisquam voluptates totam rem dicta repudiandae sunt fugiat eligendi reiciendis! Itaque.</p>
-                            </div>
+                    </div>
+                    <div class="swiper-slide" id="testimonials--robert">
+                        <div class="container--content">
+                            <h4>CELEBRITY</h4>
+                            <h2>ROBERT HOHMAN</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptatem? Nisi voluptatum accusamus eveniet dolorum repudiandae ad hic. Nobis, debitis consequatur. Sequi necessitatibus odio explicabo voluptate natus, quasi, unde hic obcaecati iste modi, sapiente blanditiis doloremque ad consectetur eos quisquam voluptates totam rem dicta repudiandae sunt fugiat eligendi reiciendis! Itaque.</p>
                         </div>
-                    </li>
-                    </ul>
+                    </div>
                 </div>
-                <div class="glide__bullets" data-glide-el="controls[nav]">
-                    <button class="glide__bullet" data-glide-dir="=0"></button>
-                    <button class="glide__bullet" data-glide-dir="=1"></button>
-                    <button class="glide__bullet" data-glide-dir="=2"></button>
-                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination--testimonial"></div>
             </div>
         </section>
         <section id="reviews">
-            <div class="glide" id="glide--reviews">
-                <div class="glide__track" data-glide-el="track">
-                    <ul class="glide__slides">
-                        <li class="glide__slide">
-                            <div>
-                                <div class="container--content">
-                                    <h2>REVIEW 1</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptatem? Nisi voluptatum accusamus eveniet dolorum repudiandae ad hic. Nobis, debitis consequatur. Sequi necessitatibus odio explicabo voluptate natus, quasi, unde hic obcaecati iste modi, sapiente blanditiis doloremque ad consectetur eos quisquam voluptates totam rem dicta repudiandae sunt fugiat eligendi reiciendis! Itaque.</p>
-                                    <p>Person</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="glide__slide">
-                            <div>
-                                <div class="container--content">
-                                    <h2>REVIEW 2</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptatem? Nisi voluptatum accusamus eveniet dolorum repudiandae ad hic. Nobis, debitis consequatur. Sequi necessitatibus odio explicabo voluptate natus, quasi, unde hic obcaecati iste modi, sapiente blanditiis doloremque ad consectetur eos quisquam voluptates totam rem dicta repudiandae sunt fugiat eligendi reiciendis! Itaque.</p>
-                                    <p>Person</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="glide__slide">
-                            <div>
-                                <div class="container--content">
-                                    <h2>REVIEW 3</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptatem? Nisi voluptatum accusamus eveniet dolorum repudiandae ad hic. Nobis, debitis consequatur. Sequi necessitatibus odio explicabo voluptate natus, quasi, unde hic obcaecati iste modi, sapiente blanditiis doloremque ad consectetur eos quisquam voluptates totam rem dicta repudiandae sunt fugiat eligendi reiciendis! Itaque.</p>
-                                    <p>Person</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="glide__slide">
-                            <div>
-                                <div class="container--content">
-                                    <h2>REVIEW 4</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptatem? Nisi voluptatum accusamus eveniet dolorum repudiandae ad hic. Nobis, debitis consequatur. Sequi necessitatibus odio explicabo voluptate natus, quasi, unde hic obcaecati iste modi, sapiente blanditiis doloremque ad consectetur eos quisquam voluptates totam rem dicta repudiandae sunt fugiat eligendi reiciendis! Itaque.</p>
-                                    <p>Person</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="glide__slide">
-                            <div>
-                                <div class="container--content">
-                                    <h2>REVIEW 5</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptatem? Nisi voluptatum accusamus eveniet dolorum repudiandae ad hic. Nobis, debitis consequatur. Sequi necessitatibus odio explicabo voluptate natus, quasi, unde hic obcaecati iste modi, sapiente blanditiis doloremque ad consectetur eos quisquam voluptates totam rem dicta repudiandae sunt fugiat eligendi reiciendis! Itaque.</p>
-                                    <p>Person</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="glide__slide">
-                            <div>
-                                <div class="container--content">
-                                    <h2>REVIEW 6</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptatem? Nisi voluptatum accusamus eveniet dolorum repudiandae ad hic. Nobis, debitis consequatur. Sequi necessitatibus odio explicabo voluptate natus, quasi, unde hic obcaecati iste modi, sapiente blanditiis doloremque ad consectetur eos quisquam voluptates totam rem dicta repudiandae sunt fugiat eligendi reiciendis! Itaque.</p>
-                                    <p>Person</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="glide__slide">
-                            <div>
-                                <div class="container--content">
-                                    <h2>REVIEW 7</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptatem? Nisi voluptatum accusamus eveniet dolorum repudiandae ad hic. Nobis, debitis consequatur. Sequi necessitatibus odio explicabo voluptate natus, quasi, unde hic obcaecati iste modi, sapiente blanditiis doloremque ad consectetur eos quisquam voluptates totam rem dicta repudiandae sunt fugiat eligendi reiciendis! Itaque.</p>
-                                    <p>Person</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="glide__slide">
-                            <div>
-                                <div class="container--content">
-                                    <h2>REVIEW 8</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptatem? Nisi voluptatum accusamus eveniet dolorum repudiandae ad hic. Nobis, debitis consequatur. Sequi necessitatibus odio explicabo voluptate natus, quasi, unde hic obcaecati iste modi, sapiente blanditiis doloremque ad consectetur eos quisquam voluptates totam rem dicta repudiandae sunt fugiat eligendi reiciendis! Itaque.</p>
-                                    <p>Person</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="glide__slide">
-                            <div>
-                                <div class="container--content">
-                                    <h2>REVIEW 9</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptatem? Nisi voluptatum accusamus eveniet dolorum repudiandae ad hic. Nobis, debitis consequatur. Sequi necessitatibus odio explicabo voluptate natus, quasi, unde hic obcaecati iste modi, sapiente blanditiis doloremque ad consectetur eos quisquam voluptates totam rem dicta repudiandae sunt fugiat eligendi reiciendis! Itaque.</p>
-                                    <p>Person</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="glide__slide">
-                            <div>
-                                <div class="container--content">
-                                    <h2>REVIEW 10</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptatem? Nisi voluptatum accusamus eveniet dolorum repudiandae ad hic. Nobis, debitis consequatur. Sequi necessitatibus odio explicabo voluptate natus, quasi, unde hic obcaecati iste modi, sapiente blanditiis doloremque ad consectetur eos quisquam voluptates totam rem dicta repudiandae sunt fugiat eligendi reiciendis! Itaque.</p>
-                                    <p>Person</p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+            <!-- Slider main container -->
+            <div class="reviewSwiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="container--content">
+                            <h2>REVIEW 1</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptatem? Nisi voluptatum accusamus eveniet dolorum repudiandae ad hic. Nobis, debitis consequatur. Sequi necessitatibus odio explicabo voluptate natus, quasi, unde hic obcaecati iste modi, sapiente blanditiis doloremque ad consectetur eos quisquam voluptates totam rem dicta repudiandae sunt fugiat eligendi reiciendis! Itaque.</p>
+                            <p>Person</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container--content">
+                            <h2>REVIEW 2</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptatem? Nisi voluptatum accusamus eveniet dolorum repudiandae ad hic. Nobis, debitis consequatur. Sequi necessitatibus odio explicabo voluptate natus, quasi, unde hic obcaecati iste modi, sapiente blanditiis doloremque ad consectetur eos quisquam voluptates totam rem dicta repudiandae sunt fugiat eligendi reiciendis! Itaque.</p>
+                            <p>Person</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container--content">
+                            <h2>REVIEW 3</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptatem? Nisi voluptatum accusamus eveniet dolorum repudiandae ad hic. Nobis, debitis consequatur. Sequi necessitatibus odio explicabo voluptate natus, quasi, unde hic obcaecati iste modi, sapiente blanditiis doloremque ad consectetur eos quisquam voluptates totam rem dicta repudiandae sunt fugiat eligendi reiciendis! Itaque.</p>
+                            <p>Person</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container--content">
+                            <h2>REVIEW 4</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptatem? Nisi voluptatum accusamus eveniet dolorum repudiandae ad hic. Nobis, debitis consequatur. Sequi necessitatibus odio explicabo voluptate natus, quasi, unde hic obcaecati iste modi, sapiente blanditiis doloremque ad consectetur eos quisquam voluptates totam rem dicta repudiandae sunt fugiat eligendi reiciendis! Itaque.</p>
+                            <p>Person</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container--content">
+                            <h2>REVIEW 5</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptatem? Nisi voluptatum accusamus eveniet dolorum repudiandae ad hic. Nobis, debitis consequatur. Sequi necessitatibus odio explicabo voluptate natus, quasi, unde hic obcaecati iste modi, sapiente blanditiis doloremque ad consectetur eos quisquam voluptates totam rem dicta repudiandae sunt fugiat eligendi reiciendis! Itaque.</p>
+                            <p>Person</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container--content">
+                            <h2>REVIEW 6</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptatem? Nisi voluptatum accusamus eveniet dolorum repudiandae ad hic. Nobis, debitis consequatur. Sequi necessitatibus odio explicabo voluptate natus, quasi, unde hic obcaecati iste modi, sapiente blanditiis doloremque ad consectetur eos quisquam voluptates totam rem dicta repudiandae sunt fugiat eligendi reiciendis! Itaque.</p>
+                            <p>Person</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container--content">
+                            <h2>REVIEW 7</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptatem? Nisi voluptatum accusamus eveniet dolorum repudiandae ad hic. Nobis, debitis consequatur. Sequi necessitatibus odio explicabo voluptate natus, quasi, unde hic obcaecati iste modi, sapiente blanditiis doloremque ad consectetur eos quisquam voluptates totam rem dicta repudiandae sunt fugiat eligendi reiciendis! Itaque.</p>
+                            <p>Person</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container--content">
+                            <h2>REVIEW 8</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptatem? Nisi voluptatum accusamus eveniet dolorum repudiandae ad hic. Nobis, debitis consequatur. Sequi necessitatibus odio explicabo voluptate natus, quasi, unde hic obcaecati iste modi, sapiente blanditiis doloremque ad consectetur eos quisquam voluptates totam rem dicta repudiandae sunt fugiat eligendi reiciendis! Itaque.</p>
+                            <p>Person</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container--content">
+                            <h2>REVIEW 9</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptatem? Nisi voluptatum accusamus eveniet dolorum repudiandae ad hic. Nobis, debitis consequatur. Sequi necessitatibus odio explicabo voluptate natus, quasi, unde hic obcaecati iste modi, sapiente blanditiis doloremque ad consectetur eos quisquam voluptates totam rem dicta repudiandae sunt fugiat eligendi reiciendis! Itaque.</p>
+                            <p>Person</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container--content">
+                            <h2>REVIEW 10</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptatem? Nisi voluptatum accusamus eveniet dolorum repudiandae ad hic. Nobis, debitis consequatur. Sequi necessitatibus odio explicabo voluptate natus, quasi, unde hic obcaecati iste modi, sapiente blanditiis doloremque ad consectetur eos quisquam voluptates totam rem dicta repudiandae sunt fugiat eligendi reiciendis! Itaque.</p>
+                            <p>Person</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="glide__bullets" data-glide-el="controls[nav]">
-                    <button class="glide__bullet" data-glide-dir="=0"></button>
-                    <button class="glide__bullet" data-glide-dir="=1"></button>
-                    <button class="glide__bullet" data-glide-dir="=2"></button>
-                    <button class="glide__bullet" data-glide-dir="=3"></button>
-                    <button class="glide__bullet" data-glide-dir="=4"></button>
-                    <button class="glide__bullet" data-glide-dir="=5"></button>
-                    <button class="glide__bullet" data-glide-dir="=6"></button>
-                    <button class="glide__bullet" data-glide-dir="=7"></button>
-                    <button class="glide__bullet" data-glide-dir="=8"></button>
-                    <button class="glide__bullet" data-glide-dir="=9"></button>
-                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination--review"></div>
             </div>
         </section>
         <section id="book">
             <h2>GAIN LP IN <strong>1</strong> COACHING SESSION</h2>
-            <!-- Calendly inline widget begin -->
             <!-- Calendly inline widget begin -->
             <!-- <div class="calendly-inline-widget" data-url="https://calendly.com/neace?hide_gdpr_banner=1&background_color=000000&text_color=e2d8d8" style="min-width:600px;height:630px;"></div>
             <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script> -->
             <!-- Calendly inline widget end -->
         </section>
         <footer>
-            <div class="container--image">
-                <img src="images/logo.png" alt="">
-            </div>
             <h4>Links</h4>
             <ul>
                 <li>About</li>

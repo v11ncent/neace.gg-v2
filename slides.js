@@ -1,50 +1,43 @@
-import Glide, { Autoplay, Controls, Swipe, Breakpoints } from 'https://unpkg.com/@glidejs/glide/dist/glide.modular.esm';
+import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js';
 
-const teamOptions = 
-{
-    type: 'carousel',
-    perView: 2,
+const teamSwiper = new Swiper('.teamSwiper', {
+    direction: 'vertical',
+    loop: true,
+    simulateTouch: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+        el: '.swiper-pagination',
+    },
     breakpoints: {
         1000: {
-            perView: 1
+            slidesPerView: 2,
+            direction: 'horizontal'
         }
     }
-}
+});
 
-const testimonialOptions =
-{
-    type: 'carousel',
-    perView: 3,
+const testimonialSwiper = new Swiper('.testimonialSwiper', {
+    direction: 'vertical',
+    loop: true,
+    simulateTouch: true,
+    slidesPerView: 1,
+    pagination: {
+        el: '.swiper-pagination--testimonial',
+    },
     breakpoints: {
         1000: {
-            perView: 1
+            direction: 'horizontal'
         }
     }
-}
+});
 
-const reviewOptions = {
-    type: 'carousel',
-    autoplay: 5000,
-    hoverpause: false,
-    perView: 5,
-    breakpoints: {
-        450: 
-        {
-            perView: 1
-        },
-        600: {
-            perView: 2
-        },
-        1000: {
-            perView: 3
-        }
+const reviewSwiper = new Swiper('.reviewSwiper', {
+    direction: 'horizontal',
+    loop: true,
+    simulateTouch: true,
+    slidesPerView: 1,
+    pagination: {
+        el: '.swiper-pagination--review',
     }
-}
-
-let glideTeam = new Glide('.glide#glide--team', teamOptions);
-let glideTestimonials = new Glide('.glide#glide--testimonials', testimonialOptions);
-let glideReviews = new Glide('.glide#glide--reviews', reviewOptions);
-
-glideTeam.mount({ Controls, Swipe, Breakpoints });
-glideTestimonials.mount({ Breakpoints, Controls, Swipe });
-glideReviews.mount({ Autoplay, Controls, Swipe, Breakpoints });
+});
