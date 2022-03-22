@@ -28,10 +28,9 @@ h2
 {
     color: var(--color-header);
     font-family: var(--ff-header);
-    font-size: clamp(1.5rem, 2.2vw, 3rem);
+    font-size: clamp(2rem, 2.2vw, 3rem);
     font-weight: 500;
     text-align: center;
-    padding-bottom: 1rem;
 }
 
 h3 
@@ -108,7 +107,8 @@ section
 {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    justify-content: center;
+    padding: 1em;
 }
 
 .container--button 
@@ -171,18 +171,6 @@ video
     filter: brightness(50%);
 }
 
-section#home::after
-{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* background-image: url('images/desktop/dot-background.jpg'); */
-    opacity: .4;
-}
-
 section#book
 {
     background-image: url('images/desktop/book-section-image.png');
@@ -196,7 +184,6 @@ section#home
     position: relative;
     margin: 0;
     padding: 0;
-    background-color: var(--color-accent);
 }
 
 section#home h2
@@ -250,182 +237,9 @@ section#reviews
     padding: 0 0.7rem;
 }
 
-section#about .container--image > img 
-{
-   width: 70vw;
-}
-
-/* Team Section */
-.container--cards 
-{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    gap: 1rem;
-    padding: 0 1rem 1rem 1rem;
-}
-
-.container--cards > .card 
-{
-    flex: 0 0 auto;
-    cursor: pointer;
-    border-radius: 0.3rem;
-    margin: auto;
-}
-
-.container--cards > .card img 
-{
-    border-radius: 0.3rem;
-}
-
-.card > .container--content h3 
-{
-    font-size: clamp(1.3rem, 1.8vw, 1.9rem);
-    text-align: left;
-}
-
-section#team .card:hover 
-{
-    opacity: 0.7;
-}
-
-section#team .container--image > img 
-{
-    width: 12rem;
-}
-
-
-section#team .container--content 
-{
-    padding: 0.3rem 0 0 0;
-    max-width: 20ch;
-}
-
-section#team p
-{
-    padding: 0;
-}
-
-/* Testimonials Section */
-section#testimonials .container--image > .container--content 
-{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    padding: 1rem;
-}
-
-section#testimonials .container--image > .container--content > p 
-{
-    color: white;
-}
-
-.display 
-{
-    display: block;
-}
-
-.hide 
-{
-    display: none;
-}
-
-section#testimonials .container--content 
-{
-    padding: 0.3rem 0 0 0;
-    max-width: 50ch;
-}
-
-section#testimonials .card p 
-{
-    max-width: 30ch;
-    color: var(--color-content);
-}
-
-section#testimonials .container--image 
-{
-    position: relative;
-}
-
-section#testimonials .container--image > img 
-{
-    width: 18rem;
-}
-
-/* Reviews Section*/
-section#reviews
-{
-    max-width: 100%;
-}
-
-section#reviews h3 
-{
-    color: var(--color-content);
-    font-weight: 400;
-    padding-top: 0.3rem;
-}
-
-section#reviews p 
-{
-    max-width: 35ch;
-    color: var(--color-content);
-}
-
-/* Footer */
 footer 
 {
-    background-color: var(--color-accent);
-    border-top: .1rem solid rgb(58, 58, 58);
-    padding: 1.5rem 1.5rem;
-}
-
-footer .container--image 
-{
-    display: flex;
-    align-items: center;
-}
-
-footer img 
-{
-    width: 2.5rem;
-    margin-left: -0.35rem;
-    padding-bottom: 0.8rem;
-}
-
-footer ul 
-{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    color: var(--color-content);
-    padding: 0;
-    font-weight: 300;
-    font-size: 0.8rem;
-}
-
-footer h4 
-{
-    font-size: 0.9rem;
-    padding: 0;
-    color: var(--color-header);
-    font-weight: 400;
-    text-align: left;
-}
-
-nav i:hover
-{
-    color: var(--color-neace);
-} 
-
-section
-{
-    height: 100%;
-    width: 100%;
+    display: none;
 }
 
 .swiper-pagination
@@ -477,14 +291,9 @@ button
     color: white;
 }
 
-section#reviews .container--content
-{
-    background-color: #000;
-}
-
 .coach--5fire
 {
-    background-image: url(images/desktop/yone.jpg);
+    background-image: url('images/desktop/yone.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -492,7 +301,7 @@ section#reviews .container--content
 
 .coach--1
 {
-    background-image: url(images/desktop/thresh.jpg);
+    background-image: url('images/desktop/thresh.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -500,7 +309,7 @@ section#reviews .container--content
 
 .coach--2
 {
-    background-image: url(images/desktop/riven.jpg);
+    background-image: url('images/desktop/riven.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -508,31 +317,31 @@ section#reviews .container--content
 
 .coach--3
 {
-    background-image: url(images/desktop/hecarim.jpg);
+    background-image: url('images/desktop/hecarim.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-#testimonials--ninja
+.testimonials--ninja
 {
-    background-image: url(images/desktop/ninja.jpg);
+    background-image: url('images/desktop/ninja.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-#testimonials--ellis
+.testimonials--ellis
 {
-    background-image: url(images/desktop/ellis.jpg);
+    background-image: url('images/desktop/ellis.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-#testimonials--robert
+.testimonials--robert
 {
-    background-image: url(images/desktop/robert.jpg);
+    background-image: url('images/desktop/robert.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -542,25 +351,6 @@ img
 {
     width: 100%;
     object-fit: cover;
-}
-
-.container--content
-{
-    padding: 2rem;
-}
-
-.container--content
-section#about .container--content,
-section#team .container--content,
-section#testimonials .container--content,
-section#reviews .container--content
-{
-    padding: 1.25rem;
-}
-
-section#about h2
-{
-    font-size: clamp(1.3rem, 2.5vw, 3rem);
 }
 
 html,
@@ -582,55 +372,29 @@ section
 
 nav
 {
-    position: fixed;
-    display: block;
-    min-height: 100%;
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0.4);
-    width: 3.5rem;
-}
-
-.nav-divider
-{
-    border: 0.1rem solid grey;
-    width: 100%;
-}
-
-nav div#desktop-nav
-{
-    display: flex;
-    flex-direction: column;
-    color: white;
-}
-
-nav div#desktop-nav ul
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: calc(3rem + 3vh);
-}
-
-nav div#desktop-nav ul div:first-child
-{
-    background-color: var(--color-neace);
-    border: 1px solid white;
+    display: none;
 }
 
 i
 {
-    color: var(--color-header);
     font-size: 1.3rem;
 }
 
-video 
+.review--rating
 {
-    display: block;
-    position: absolute;
-    z-index: 0;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
+    display: inline-flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 1em 0 1em 0;
+    color: var(--color-header);
+}
+
+section#reviews .swiper-slide
+{
+    background-image: url('images/wp2139193.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 section#home .container--content,
@@ -643,7 +407,6 @@ nav
 {
     display: none;
 }
-
 
 .container--cards 
 {
@@ -703,60 +466,26 @@ section#home h2
     font-weight: 400;
 }
 
-section#home h3 
+@media (max-width: 1000px)
 {
-    display: none;
-}
-
-section#home .container--content 
-{
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-}
-
-section#home span {
-    width: 65%;
-}
-
-section#home .button.small 
-{
-    display: flex;
-    justify-content: center;
-}
-
-section#reviews .container--content
-{
-    align-items: flex-start;
-}
-
-section#reviews p
-{
-    text-align: left;
-}
-
-@media (max-width: 450px)
-{
-    section#reviews p 
+    section#book
     {
-        text-align: center;
+        background-image: none;
     }
 
     section#reviews .container--content
     {
-        align-items: center;
         justify-content: center;
-        padding: 0;
-        margin: 0;
+        align-items: center;
+    }
+
+    section#reviews .container--content p
+    {
+        text-align: center;
     }
 }
 
-section#about .container--content
-{
-    justify-content: center;
-}
-
-@media (max-width: 1000px)
+@media (max-width: 1300px)
 {
     section#about .container--content
     {
@@ -772,7 +501,6 @@ section#about .container--content
 
     section#about
     {
-        
         background-image: url('images/SummonersRift.jpg');
     }
 }

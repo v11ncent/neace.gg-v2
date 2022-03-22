@@ -10,7 +10,7 @@ const teamSwiper = new Swiper('.teamSwiper', {
         el: '.swiper-pagination',
     },
     breakpoints: {
-        1000: {
+        1100: {
             slidesPerView: 2,
             direction: 'horizontal'
         }
@@ -22,22 +22,38 @@ const testimonialSwiper = new Swiper('.testimonialSwiper', {
     loop: true,
     simulateTouch: true,
     slidesPerView: 1,
+    spaceBetween: 10,
     pagination: {
         el: '.swiper-pagination--testimonial',
     },
     breakpoints: {
-        1000: {
+        1100: {
+            slidesPerView: 3,
             direction: 'horizontal'
         }
     }
 });
 
 const reviewSwiper = new Swiper('.reviewSwiper', {
-    direction: 'horizontal',
+    direction: 'vertical',
     loop: true,
     simulateTouch: true,
     slidesPerView: 1,
+    spaceBetween: 10,
+    autoplay: {
+        delay: 2000
+    },
     pagination: {
         el: '.swiper-pagination--review',
+    },
+    breakpoints: {
+        1100: {
+            slidesPerView: 3,
+            direction: 'horizontal'
+        },
+        1400: {
+            slidesPerView: 4,
+            direction: 'horizontal'
+        }
     }
 });
